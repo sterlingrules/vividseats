@@ -1,0 +1,24 @@
+<div class="tabs-panel">
+	<table>
+		<tr>
+			<th>Event Name</th>
+			<th class="date">Date</th>
+			<th>Venue</th>
+			<th>City</th>
+			<th>State</th>
+			<th>Action</th>
+		</tr>
+		<tr ng-repeat="event in events">
+			<td ng-bind="event.name"></td>
+			<td ng-bind="event.date | date" class="date"></td>
+			<td ng-bind="event.venue.name"></td>
+			<td ng-bind="event.venue.city"></td>
+			<td ng-bind="event.venue.state"></td>
+			<td class="actions">
+				<actions></actions>
+			</td>
+		</tr>
+	</table>
+
+	<a href="" class="btn blue text_center center full_width huge">Add Event</a>
+</div>

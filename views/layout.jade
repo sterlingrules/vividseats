@@ -1,0 +1,21 @@
+doctype html
+html(ng-app='EventManagement')
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    block content
+    script(type='text/javascript', src='javascripts/bower_components/headjs/dist/1.0.0/head.load.min.js')
+    script(type='text/javascript').
+        head.js(
+            // Plugins
+            { AngularJS: 'javascripts/bower_components/angular/angular.min.js' },
+            { AngularRoute: 'javascripts/bower_components/angular-route/angular-route.min.js' },
+            { AngularResource: 'javascripts/bower_components/angular-resource/angular-resource.min.js' },
+            { EventService: 'javascripts/event-service.js' },
+            { App: 'javascripts/app.js' },
+            { Router: 'javascripts/router.js' },
+            { Controllers: 'javascripts/controllers.js' },
+            { Filters: 'javascripts/filters.js' },
+            { Directives: 'javascripts/directives.js' }
+        );

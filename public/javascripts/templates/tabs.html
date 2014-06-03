@@ -1,0 +1,9 @@
+<section class="content center">
+	<ul class="tabs inline_list text_center">
+		<li ng-class="{ active: isActive('/events/all') }"><a href="#/events/all">All Events</a></li><li ng-class="{active: isActive('/events/upcoming')}">
+			<a href="#/events/upcoming" ng-click="tabCtrl.selectTab(2)">Upcoming Events</a></li><li ng-class="{active: isActive('/events/local')}">
+			<a href="#/events/local" ng-click="tabCtrl.selectTab(3)">Local Events</a></li>
+	</ul>
+
+	<section class="tabs-content" ng-view></section>
+</section>

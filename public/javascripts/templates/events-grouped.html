@@ -1,0 +1,25 @@
+<div class="tabs-panel">
+	<div ng-repeat="city in cities">
+		<h1>Events in {{city}}</h1>
+		<table width="100%">
+			<tr>
+				<th>Event Name</th>
+				<th class="date">Date</th>
+				<th>Venue</th>
+				<th>City</th>
+				<th>State</th>
+				<th>Action</th>
+			</tr>
+			<tr ng-repeat="event in events | filter:city:venue.city">
+				<td ng-bind="event.name"></td>
+				<td ng-bind="event.date | date" class="date"></td>
+				<td ng-bind="event.venue.name"></td>
+				<td ng-bind="event.venue.city"></td>
+				<td ng-bind="event.venue.state"></td>
+				<td class="actions">
+					<actions></actions>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>

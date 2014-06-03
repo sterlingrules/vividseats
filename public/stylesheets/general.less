@@ -1,0 +1,89 @@
+a {
+	color: @blue;
+	text-decoration: none;
+}
+
+.content {
+	display: block;
+	width: 600px;
+}
+
+/* Tabs */
+.tabs {
+	margin: 20px 0;
+	padding: 0;
+	.box-sizing;
+
+	li {
+		width: 33%;
+		margin-left: -1px;
+
+		&.active a {
+			color: @white;
+			background: @blue; 
+		}
+		&:first-child {
+			margin-left: 0;
+			a { .border-radius(4px 0 0 4px); }
+		}
+		&:last-child a { .border-radius(0 4px 4px 0); }
+	}
+	a {
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 10px 12px;
+		border: 1px solid @blue;
+		.box-sizing;
+		.transition;
+
+		&:hover {
+			color: @white;
+			background: @blue;
+		}
+	}
+}
+
+.tabs-content {
+	td, th {
+		padding: 10px;
+		border-bottom: 1px solid @gray;
+		text-align: left;
+
+		&.date { width: 120px; }
+		// &:first-child { padding-left: 0; }
+	}
+	th { font-weight: 900; }
+	tr {
+		&:hover td { background: lighten(@gray, 15%); }
+		&:last-child td,
+		&:last-child th {
+			border-bottom: none;
+		}
+	}
+	table { margin-bottom: 50px; }
+}
+
+.actions {
+	vertical-align: middle;
+}
+
+/* Buttons */
+.btn {
+	display: inline-block;
+	margin: 20px 0 40px;
+	padding: 10px 16px;
+	background: transparent;
+	.border-radius;
+	.box-sizing;
+
+	&.blue {
+		color: @blue;
+		border: 1px solid @blue;
+
+		&:hover {
+			color: @white;
+			background: @blue;
+		}
+	}
+}
