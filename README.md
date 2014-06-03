@@ -2,7 +2,10 @@
 
 Service Technologies:
 * AngularJS
-* Node.JS
+* NodeJS
 * Express
 * Jade
 * LESS
+
+Sterling Salzberg
+me@mynameissterling.com
