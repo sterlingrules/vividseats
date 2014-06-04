@@ -1,5 +1,8 @@
 (function() {
-	var app = angular.module('EventRouter', [ 'ngRoute', 'EventControllers' ]);
+	var app = angular.module('EventRouter', [
+			'ngRoute',
+			'EventControllers'
+		]);
 
 	app.config([ '$routeProvider',
 		function($routeProvider) {

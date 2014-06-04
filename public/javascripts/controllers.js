@@ -3,11 +3,10 @@
 
 	app.controller('EventsAllController', [ '$scope', function($scope) {
 		$scope.events = [];
+		
 		$scope.onSuccess = function(data) {
 			$scope.events = data;
 			$scope.$apply();
-
-			console.log(data);
 		};
 		$scope.onError = function(data) {
 			$scope.events = data;

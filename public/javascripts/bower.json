@@ -19,6 +19,8 @@
     "angular": "~1.2.16",
     "headjs": "~1.0.3",
     "angular-route": "~1.2.16",
-    "angular-resource": "~1.2.16"
+    "angular-resource": "~1.2.16",
+    "jasmine": "~2.0.0",
+    "angular-mocks": "~1.2.16"
   }
 }
